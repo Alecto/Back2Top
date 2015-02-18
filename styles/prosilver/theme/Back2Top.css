@@ -1,0 +1,53 @@
+#top-link {
+	background-color: #ffffff;
+	cursor: pointer;
+	left: 0px;
+	opacity: 0.2 !important;
+		-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
+		-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
+		-o-transition-property: opacity; -o-transition-duration: 0.5s;
+		transition-property: opacity; transition-duration: 0.5s;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+#top-link:hover{
+	background-color: #e0e0e0;
+	box-shadow: 0 0 5px 2px #9D9A93, inset 0 3px 18px rgba(100, 100, 100, .25);
+	opacity: 1.0 !important;
+		-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
+		-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
+		-o-transition-property: opacity; -o-transition-duration: 0.5s;
+		transition-property: opacity; transition-duration: 0.5s;
+}
+	#top-link a {
+		color: #105289;
+		display: block;
+		font-size: 11px;
+		font-weight: bold;
+		margin: 0 5px 5px;
+		padding: 5px 0;
+		text-align: center;
+		text-decoration: none !important;
+		width: 12px;
+	}
+		#topicon,
+		#backicon {
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			margin-top: 4px;
+			margin-left: -4px;
+			position: absolute;
+		}
+		#topicon { border-bottom: 8px solid #105289; }
+		#backicon { border-top: 8px solid #105289; position: absolute; }
+		#text { padding-left: 15px; position: absolute; word-wrap: normal; }
+
+
+/* адаптация под размеры окна */
+
+@media only screen and (max-width: 1400px), only screen and (max-device-width: 1400px) {
+	#text { display: none; }
+}
