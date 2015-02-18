@@ -1,6 +1,7 @@
 #top-link {
 	background-color: #ffffff;
 	cursor: pointer;
+	display: none;
 	left: 0px;
 	opacity: 0.2 !important;
 		-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
@@ -35,8 +36,8 @@
 	}
 		#topicon,
 		#backicon {
-			border-left: 8px solid transparent;
-			border-right: 8px solid transparent;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
 			margin-top: 4px;
 			margin-left: -4px;
 			position: absolute;

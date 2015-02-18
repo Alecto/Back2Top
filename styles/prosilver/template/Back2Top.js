@@ -6,7 +6,7 @@ jQuery.extend(jQuery.fn, {
 		totalContentWidth = jQuery('#wrap').outerWidth(); // ширина блока с контентом, включая padding
 		totalTopLinkWidth = jQuery('#top-link').children('a').outerWidth(true); // ширина самой кнопки наверх, включая padding и margin
 		h = jQuery(window).width()/2-totalContentWidth/2-totalTopLinkWidth;
-		if(h<0){					// был 0, поставил -10 как допустимый параметр
+		if(h<-10){					// был 0, поставил -10 как допустимый параметр
 			jQuery(this).hide();			// если кнопка не умещается, скрываем её
 			jQuery(this).attr('hidden-button', 'true');
 		} else {
@@ -40,11 +40,11 @@ jQuery(function($){
 	topLink.click(function(e) {
 		if($(this).hasClass('bottom_button')){
 			// при нажатии на кнопку «Вниз» переходим туда, где прекратили чтение
-			$("body").scrollTo( pos + 'px', 10 );
+			$("body").scrollTo( pos + 'px', 200 );
 		} else{
 			// определяем и запоминаем координаты того места страницы, откуда был совершен переход наверх
 			pos = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-			$("body,html").animate({scrollTop: 0},10);
+			$("body,html").animate({scrollTop: 0},200);
 		}
 		return false;
 	});
