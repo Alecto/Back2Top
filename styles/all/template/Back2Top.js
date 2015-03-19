@@ -31,7 +31,7 @@ jQuery(function($){
 	$(window).scroll(function() {
 	    if (jQuery('#top-link').attr('hidden-button') == 'false') {
 		if($(window).scrollTop() >= 1) {
-			topLink.fadeIn(300).children('a').html('<span id="topicon"></span><span id="text">Наверх</span>').parent().removeClass('bottom_button').addClass('top_button');
+			topLink.fadeIn(300).children('a').html('<span id="topicon"></span><span id="b2t_text">Наверх</span>').parent().removeClass('bottom_button').addClass('top_button');
 		} else {
 			topLink.children('a').html('<span id="backicon"></span>').parent().removeClass('top_button').addClass('bottom_button');
 		}

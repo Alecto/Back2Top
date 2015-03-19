@@ -44,11 +44,11 @@
 		}
 		#topicon { border-bottom: 8px solid #105289; }
 		#backicon { border-top: 8px solid #105289; position: absolute; }
-		#text { padding-left: 15px; position: absolute; word-wrap: normal; }
+		#b2t_text { padding-left: 15px; position: absolute; word-wrap: normal; }
 
 
 /* адаптация под размеры окна */
 
 @media only screen and (max-width: 1400px), only screen and (max-device-width: 1400px) {
-	#text { display: none; }
+	#b2t_text { display: none; }
 }
